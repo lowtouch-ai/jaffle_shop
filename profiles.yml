@@ -10,4 +10,13 @@ jaffle_shop:
       dbname: postgres
       schema: mart
       threads: 6
+    dev_fusion:
+      type: postgres
+      host: postgres
+      user: "{{env_var('AIRFLOW_POSTGRES_USER')}}"
+      password: "{{env_var('AIRFLOW_POSTGRES_PASSWORD')}}"
+      port: 5432
+      dbname: postgres
+      schema: fusion_mart
+      threads: 6
   

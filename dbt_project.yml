@@ -21,10 +21,10 @@ require-dbt-version: [">=1.0.0", "<2.0.0"]
 
 models:
   jaffle_shop:
-      materialized: table
+      +materialized: table
       staging:
-        materialized: view
-        schema: public
+        +materialized: view
+        +schema: public
 
 vars: 
   staging_order_name: stg_orders
