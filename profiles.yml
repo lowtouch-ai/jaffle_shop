@@ -20,8 +20,4 @@ jaffle_shop:
       warehouse: COMPUTE_WH
       schema: FUSION_MART
       threads: 6
-      quoting:
-        database: false
-        schema: false
-        identifier: false
   
