@@ -12,9 +12,9 @@ jaffle_shop:
       threads: 6
     dev_fusion:
       type: snowflake
-      account: lwlungs-ug60909
-      user: Adhil
-      password: "Adhil@ecloudcontrol123"
+      account: "{{env_var('SNOWFLAKE_ACCOUNT')}}"
+      user: "{{env_var('SNOWFLAKE_USER')}}"
+      password: "{{env_var('SNOWFLAKE_PASSWORD')}}"
       role: ACCOUNTADMIN
       database: JAFFLE_DB
       warehouse: COMPUTE_WH
