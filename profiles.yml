@@ -15,9 +15,9 @@ jaffle_shop:
       account: "{{env_var('SNOWFLAKE_ACCOUNT')}}"
       user: "{{env_var('SNOWFLAKE_USER')}}"
       password: "{{env_var('SNOWFLAKE_PASSWORD')}}"
-      role: ACCOUNTADMIN
-      database: JAFFLE_DB
-      warehouse: COMPUTE_WH
+      role: "{{env_var('SNOWFLAKE_ROLE')}}"
+      database: "{{env_var('SNOWFLAKE_DATABASE')}}"
+      warehouse: "{{env_var('SNOWFLAKE_WAREHOUSE')}}"
       schema: FUSION_MART
       threads: 6
   
