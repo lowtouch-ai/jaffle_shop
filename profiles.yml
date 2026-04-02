@@ -10,4 +10,14 @@ jaffle_shop:
       dbname: postgres
       schema: mart
       threads: 6
+    dev_fusion:
+      type: snowflake
+      account: "{{env_var('SNOWFLAKE_ACCOUNT')}}"
+      user: "{{env_var('SNOWFLAKE_USER')}}"
+      password: "{{env_var('SNOWFLAKE_PASSWORD')}}"
+      role: "{{env_var('SNOWFLAKE_ROLE')}}"
+      database: "{{env_var('SNOWFLAKE_DATABASE')}}"
+      warehouse: "{{env_var('SNOWFLAKE_WAREHOUSE')}}"
+      schema: FUSION_MART
+      threads: 6
   

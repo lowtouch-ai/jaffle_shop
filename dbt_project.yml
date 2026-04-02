@@ -17,14 +17,19 @@ clean-targets:
     - "dbt_modules"
     - "logs"
 
-require-dbt-version: [">=1.0.0", "<2.0.0"]
+require-dbt-version: [">=1.0.0", "<3.0.0"]
+
+quoting:
+  database: false
+  schema: false
+  identifier: false
 
 models:
   jaffle_shop:
-      materialized: table
+      +materialized: table
       staging:
-        materialized: view
-        schema: public
+        +materialized: view
+        +schema: public
 
 vars: 
   staging_order_name: stg_orders
