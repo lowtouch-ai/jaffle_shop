@@ -1,6 +1,11 @@
 SNOWFLAKE_CONN_ID: "snowflake_connection"
-SNOWFLAKE_SCHEMA: "TEST_DEV_DB.TEST_SCHEMA"
 OWNER: "data_engineering"
+# Folders that get the Snowflake objects DAG (gitrunner copies its template into each one).
+# The folder name is the Snowflake schema: <connection database>.<folder>.
+# error/ etc/ models/ seeds/ are the jaffle_shop dbt project; without this list gitrunner
+# would copy the template into all of them, including dbt's models/.
+SCHEMAS:
+  - "objects"
 PARAMS:
   - 'r2'
   - 'p2'

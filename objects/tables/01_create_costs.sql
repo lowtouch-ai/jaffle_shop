@@ -1,5 +1,5 @@
 USE {{ params.schema_name }};
-CREATE OR REPLACE TRANSIENT TABLE {{ params.table_name }}
+CREATE OR REPLACE TRANSIENT TABLE costs
         (
             id INT,
             land_damage_cost INT,
