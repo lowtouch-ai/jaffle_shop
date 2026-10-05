@@ -20,4 +20,4 @@ Inside a folder the files run one at a time in file-name order, which is why the
 | `functions/` | Python UDF `addone` |
 | `procedures/` | JavaScript procedure `myproc` |
 
-`{{ params.schema_name }}` in the SQL is filled in by the DAG.
+The `params.schema_name` placeholder in the SQL files is filled in by the DAG.
