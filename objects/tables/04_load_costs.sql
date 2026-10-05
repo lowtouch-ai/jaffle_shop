@@ -1,5 +1,5 @@
 USE {{ params.schema_name }};
-INSERT INTO {{ params.table_name }} VALUES
+INSERT INTO costs VALUES
         (1,150000,32000,10000),
         (2,200000,50000,50000),
         (3,90000,120000,300000),
